@@ -1,0 +1,38 @@
+1. Web 
+"""
+Offline AI Code Generator & Fixer — Web App version
+Runs 100% locally. Open your browser to http://localhost:5000
+
+SETUP:
+1. Install Ollama: https://ollama.com/download
+2. ollama pull qwen2.5-coder:3b   (or whichever model you're using)
+3. pip install flask requests
+4. python app.py
+5. Open a browser to http://localhost:5000
+
+Leave the terminal running while you use the app in the browser.
+"""
+
+2. Desktop app
+
+"""
+Offline AI Code Generator & Fixer
+Runs 100% locally on your machine using Ollama (no internet required after setup).
+
+SETUP (one-time, needs internet):
+1. Install Ollama: https://ollama.com/download (Windows installer)
+2. Open a terminal and pull a coding model, e.g.:
+       ollama pull qwen2.5-coder:7b
+   (Good options for an RTX 3050/3060/3070 Ti with 6-8GB VRAM:
+       qwen2.5-coder:7b   - best quality/speed balance
+       deepseek-coder:6.7b
+       codellama:7b
+   If you have less VRAM, use a smaller model: qwen2.5-coder:1.5b or :3b)
+3. Install Python deps:
+       pip install requests
+4. Run this app:
+       python offline_code_assistant.py
+
+After setup, turn off WiFi -- this app will still work, because Ollama
+serves the model locally at http://localhost:11434
+"""
